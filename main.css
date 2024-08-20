@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* || RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --SOFT-BLUE: #8bacd9;
+  --WHITE: #ffffff;
+  --CYAN: #00fff8;
+  --DARK-BLUE-MAIN-BG: #0d192c;
+  --DARK-BLUE-CARD-BG: #15263f;
+  --DARK-BLUE-LINE: #2e405a;
+
+  /* TYPOGRAPHY */
+  --FF: "Outfit", sans-serif;
+  --HEADING: 600 22px var(--FF);
+  --BODY: 300 18px/26px var(--FF);
+  --CAPTION: normal 16px var(--FF);
+  --CAPTION-BOLD: 600 16px var(--FF);
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    
+}
