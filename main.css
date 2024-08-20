@@ -51,5 +51,148 @@ html {
 }
 
 body {
-    
+  background-color: var(--DARK-BLUE-MAIN-BG);
+  min-height: 100vh;
+  max-width: 100%;
+  color: black;
+  font-family: var(--FF);
+  display: grid;
+  place-content: center;
 }
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+a:any-link {
+  color: var(--WHITE);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--CYAN);
+}
+
+/* MOBILE FIRST DESIGN */
+
+/* || CARD */
+.main__card {
+  width: 327px;
+  height: 543px;
+  padding: 24px;
+  background-color: var(--DARK-BLUE-CARD-BG);
+  border-radius: 15px;
+}
+
+/* || CARD-HERO */
+.main__card__hero {
+  position: relative;
+  height: 278px;
+  width: 278px;
+  margin-bottom: 24px;
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero__image img {
+  border-radius: 8px;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.503);
+  z-index: 2;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.main__card__hero:hover .hero__overlay {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.hero__overlay img {
+  margin: 127px 127px;
+}
+
+/* || DETAILS */
+.main__card__details {
+  margin-top: 24px;
+}
+
+.details__heading {
+  font: var(--HEADING);
+  margin-bottom: 12px;
+}
+
+.details__description {
+  font: var(--BODY);
+  color: var(--SOFT-BLUE);
+  margin-bottom: 16px;
+}
+
+/* || DETAILS-VALUE/TIME */
+.details__value-time {
+  display: flex;
+  flex-flow: row;
+  gap: 96.82px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.value-time__value {
+  display: flex;
+  align-items: center;
+  gap: 6.48px;
+  color: var(--CYAN);
+  font: 600 15px var(--FF);
+}
+
+.value-time__time {
+  display: flex;
+  align-items: center;
+  gap: 7.7px;
+  color: var(--SOFT-BLUE);
+  font: normal 15px var(--FF);
+}
+
+/* || DETAILS-LINE */
+.line {
+  width: 278px;
+  height: 1px;
+  background-color: var(--DARK-BLUE-LINE);
+  margin-bottom: 16px;
+}
+
+/* || DETAILS-AUTHOR */
+.details__author {
+  display: flex;
+  flex-flow: row;
+  gap: 16px;
+  align-items: center;
+  color: var(--SOFT-BLUE);
+}
+
+.author__avatar {
+  width: 33px;
+  height: 33px;
+  border: 1px solid var(--WHITE);
+  border-radius: 50%;
+}
+
+/*  */
