@@ -185,6 +185,7 @@ a:focus-visible {
   flex-flow: row;
   gap: 16px;
   align-items: center;
+  font: var(--CAPTION);
   color: var(--SOFT-BLUE);
 }
 
@@ -195,4 +196,16 @@ a:focus-visible {
   border-radius: 50%;
 }
 
-/*  */
+/* || MEDIA QUERIES */
+@media screen and (min-width: 720px) {
+  .main__card {
+    width: 350px;
+    height: 596px;
+  }
+
+  .main__card__hero {
+    position: relative;
+    height: 302px;
+    width: 302px;
+  }
+}
