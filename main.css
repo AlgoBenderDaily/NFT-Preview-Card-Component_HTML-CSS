@@ -86,6 +86,7 @@ a:focus-visible {
   padding: 24px;
   background-color: var(--DARK-BLUE-CARD-BG);
   border-radius: 15px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.0953);
 }
 
 /* || CARD-HERO */
@@ -197,15 +198,29 @@ a:focus-visible {
 }
 
 /* || MEDIA QUERIES */
+/* Desktop/Tablets */
 @media screen and (min-width: 720px) {
   .main__card {
     width: 350px;
     height: 596px;
+    padding: 24px 24px 32px 24px;
   }
 
   .main__card__hero {
     position: relative;
     height: 302px;
     width: 302px;
+  }
+
+  .details__value-time {
+    margin-bottom: 24px;
+  }
+
+  .details__heading {
+    margin-bottom: 16px;
+  }
+
+  .details__description {
+    margin-bottom: 24px;
   }
 }
